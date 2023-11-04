@@ -83,6 +83,33 @@ cursor: pointer;
 
 /* HOMEPAGE QUOTE CAROUSEL*/
 
+#quote-carousel {
+    height: auto;
+    background-color: var(--colorpurple);
+}
+
+
+
+.carousel-control-prev-icon {
+    background-image: url(images/arrow_white_left.png);
+    width: 40px;
+    height: 60px;
+}
+
+.carousel-control-next-icon {
+    background-image: url(images/arrow_white_right.png);
+    width: 40px;
+    height: 60px;
+}
+
+.blockquote-footer {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--colorwhite);
+    margin-bottom: 0;
+}
+
+/* Media Queries for mobile first and Responsive designs */
 @media screen and (max-width: 980px) {
     .header-title {
         font-size: 100px !important;
@@ -117,6 +144,9 @@ cursor: pointer;
     }
     nav ul {
         flex-direction: column;
+    }
+    .quote-carousel img{
+        position: relative !important;
     }
 }
 
