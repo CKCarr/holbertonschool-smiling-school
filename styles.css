@@ -1,0 +1,131 @@
+.header {
+    background: url('images/pic_1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hamburger-menu::before {
+    content: '\e911';
+    text-decoration: none;
+    display: none;
+    color:white !important;
+}
+
+#hamburger-checkbox {
+    display: none;
+    position:absolute;
+}
+
+.top-bun,
+.patty,
+.btm-bun {
+    background-color: var(--colorwhite);
+    height: 5px; /* Height of each bar */
+    width: 35px; /* Width of each bar */
+    margin: 5px 0; /* Spacing between bars */
+    transition: background-color 0.3s;
+}
+
+.patty {
+    width: 20px !important;
+}
+
+.header-icon {
+    width: 40px;
+    height: 35px;
+    background: url(images/smile_off.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.header-logo {
+width: 200px;
+height: 40px;
+background: url(images/logo.png) 0 0 no-repeat;
+background-size: cover;
+}
+
+.header-title {
+font-size: 180px;
+}
+
+.btn-primary {
+    background-color: var(--colorpurple) !important;
+    font-size: 16px;
+    width: 180px;
+    height: 44px;
+}
+
+.btn-primary:hover {
+    opacity: 0.7;
+}
+
+.shadow-lg {
+    box-shadow:  0.65rem 0.5rem 0.5rem 0.1rem rgba(0, 0, 0, 0.25) !important;
+}
+
+.nav-link{
+font-size: 14px;
+}
+
+.nav-item:hover {
+color: var(--colorpurple);
+transition: ease-out 0.2s;
+cursor: pointer;
+}
+
+.purp-span-text {
+    font-family: var(--font-family-bold);
+    color: var(--colorpurple);
+    font-weight: var(--font-weight-bold);
+}
+
+/* HOMEPAGE QUOTE CAROUSEL*/
+
+@media screen and (max-width: 980px) {
+    .header-title {
+        font-size: 100px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        padding-top: 0px !important;
+    }
+    .header-title {
+        font-size: 90px !important;
+        text-align: center;
+    }
+}
+
+/* Media query for screens smaller than or equal to 576px (sm) */
+@media (max-width: 576px) {
+    .header {
+        background: url('images/pic_1.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    .header-content {
+        padding-top: 0px !important;
+    }
+    .header-title {
+        font-size: 70px !important;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-content {
+        padding-top: 0px !important;
+    }
+    .header-title {
+        font-size: 50px !important;
+        text-align: center;
+    }
+}
