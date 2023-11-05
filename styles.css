@@ -81,14 +81,14 @@ cursor: pointer;
     font-weight: var(--font-weight-bold);
 }
 
+
+
 /* HOMEPAGE QUOTE CAROUSEL*/
 
 #quote-carousel {
     height: auto;
     background-color: var(--colorpurple);
 }
-
-
 
 .carousel-control-prev-icon {
     background-image: url(images/arrow_white_left.png);
@@ -102,12 +102,41 @@ cursor: pointer;
     height: 60px;
 }
 
+.quote-img {
+    position: relative;
+    height: 210px;
+    width: 200px;
+}
+
+
+
 .blockquote-footer {
     font-size: 14px;
     font-style: italic;
     color: var(--colorwhite);
     margin-bottom: 0;
 }
+
+/* VIDEO Carousel*/
+#video-carousel {
+    height: auto;
+    background-color: var(--colorprimary);
+}
+
+.person-img {
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* VIDEO CARD CAROUSEL POPULAR */
+.play-icon-overlay {
+    opacity: 0.7;
+}
+
+
 
 /* Media Queries for mobile first and Responsive designs */
 @media screen and (max-width: 980px) {
@@ -124,6 +153,8 @@ cursor: pointer;
         font-size: 90px !important;
         text-align: center;
     }
+
+
 }
 
 /* Media query for screens smaller than or equal to 576px (sm) */
@@ -145,8 +176,8 @@ cursor: pointer;
     nav ul {
         flex-direction: column;
     }
-    .quote-carousel img{
-        position: relative !important;
+    .quote-carousel {
+        height: auto !important;
     }
 }
 
@@ -158,4 +189,7 @@ cursor: pointer;
         font-size: 50px !important;
         text-align: center;
     }
+/* VIDEO CARD CAROUSEL POPULAR */
+
+
 }

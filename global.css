@@ -12,7 +12,7 @@
     --font-family-bold: 'Source-sans-Pro-Bold';
     --font-family-italic: 'Source-sans-Pro-Italic';
     --font-weight-bold: 700;
---font-weight-regular: 400;
+    --font-weight-regular: 400;
     --font-weight-italic: 400;
     --font-size-base: 16px;
     --font-size-title: 100px;
@@ -36,8 +36,16 @@
     font-weight: var(--font-weight-bold);
     }
 
-  body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-base);
+  }
 
+  body, html {
+    width: 100%;
+    height: auto%;
     font-family: var(--font-family-base);
   }
 
@@ -45,3 +53,17 @@
     list-style: none;
     font-family: var(--font-family-base);
   }
+
+  /* Learning how to hide scroll bars and web-kits*/
+
+/* Hide scroll-bars but allow scrolling */
+html, body {
+
+  overflow: auto; /* Hide default scroll-bars */
+}
+
+/* Customize scrollbar appearance */
+/* These styles may not work in all browsers */
+::-webkit-scrollbar {
+  width: 2px; /* Adjust the scrollbar width as needed */
+}
