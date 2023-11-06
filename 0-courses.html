@@ -1,36 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SmileSchool</title>
-    <!-- ICONs-->
-    <link rel="icon" type="image/png" href="./images/favicon.ico" />
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet" />
-    <!--JQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-  
-    <!-- Include Normalize.css in your HTML file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="global.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmileSchool</title>
+  <!-- ICONs-->
+  <link rel="icon" type="image/png" href="./images/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet" />
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <!--JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+  <!-- Include Normalize.css in your HTML file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/holberton_school-icon/style.css" />
+  <link rel="stylesheet" href="assets/holberton_school-icon/style.scss" />
+  <link rel="stylesheet" href="assets/holberton_school-icon/variables.scss" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="global.css" />
 </head>
+
 <body>
-    
+  <!-- HEADER -->
+  <div class="header-courses">
+    <header class="container d-flex justify-content-between pt-4 flex-sm-row flex-column">
+      <div
+        class="d-flex col-xl-9 col-md-7 col-sm-6 col-12 align-items-center mt-0 justify-content-center justify-content-sm-start flex-sm-row flex-column">
+        <div class="header-icon m1-4 mr-2"></div>
+        <div class="header-logo mt-sm-0 mt-2 ml-4"></div>
+      </div>
+
+      <!-- Hamburger menu to respond for all screen sizes -->
+      <div class="hamburger-menu float-left position-absolute pl-4 active d-sm-none">
+        <input type="checkbox" id="hamburger-checkbox" class="d-sm-none hamburger-menu" />
+        <label for="hamburger-checkbox" data-toggle="collapse" href="#hamburger-collapse" role="button"
+          aria-expanded="true" aria-controls="hamburger-collapse">
+          <div class="top-bun"></div>
+          <div class="patty"></div>
+          <div class="btm-bun"></div>
+        </label>
+      </div>
+
+      <div class="header-nav">
+        <nav class="text-white col-xl-3 col-sm-6 col-12 col-md-5 d-sm-flex collapse " id="hamburger-collapse">
+          <ul class="d-flex justify-content-sm-between align-items-center px-0 w-100">
+            <li class="nav-item">
+              <a class="nav-link"><b>COURSES</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><b>PRICING</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><b>LOGIN</b></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <div class="header-content2 text-center ">
+      <h1 class="header-title2 text-white font-weight-bold p-5 pb-5 mt-3">
+        « Don’t cry because it’s over.<br>
+        <span class="purp-span-text">Smile</span> because it happened. »
+      </h1>
+
+    </div>
+  </div>
+
+  <section class="course-form container-fluid text-white">
+    <div class="container ">
+      <div class="row ">
+        <div class="col-12 col-md-12 col-lg-4">
+          <form>
+            <!-- Input Field 1: Keywords Search -->
+            <div class="form-group">
+              <label class="" for="keywords">Keywords</label>
+
+              <input type="text" class="form-control text-white  input-background" id="keywords" name="keywords"
+                placeholder="Search by keywords">
+            </div>
+          </form>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <form>
+            <!-- Input Field 2: Topic Dropdown -->
+            <div class="form-group">
+              <label for="topic">Topic</label>
+              <select class="form-control input-background" id="topic" name="topic">
+                <option value="novice">Novice</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <form>
+            <!-- Input Field 3: Most Popular Dropdown -->
+            <div class="form-group">
+              <label for="popular">Sort By</label>
+              <select class="form-control input-background" id="popular" name="popular" placeholder="Most Popular">
+                <option value="most popular">Most Popular</option>
+                <!-- Add other topic options here -->
+                <option value="happy">Happiest Smiles</option>
+                <option value="hello">Welcoming Smiles</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!--VIDEO CAROUSEL  LATEST SECTION-->
+
+
+  <!--VIDEO SECTION TEST -->
+
+  <section class="container-fluid ">
+    <div class="row ">
+
+      <!-- CARD 1 -->
+      <div class="col col-12 col-sm-4 col-md-3 col-lg-3 p-4">
+
+        <div class="card" style="max-width: 18rem">
+          <div class="card-header bg-transparent">
+            <img src="images/thumbnail_1.jpg" class="card-img-top" alt="Video Thumbnail" />
+
+            <img class="play-icon-img1 position-absolute" src="images/play.png" alt="Play Icon" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-left font-weight-bold">
+              Diagonal Smile
+            </h5>
+            <p class="card-text text-left text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
+            </p>
+          </div>
+          <div class="card-footer purp-span-text bg-transparent pt-4">
+            <div class="d-flex align-items-center justify-content-left">
+              <img class="person-img img-fluid rounded-circle" src="images/profile_5.jpg" alt="Person's Avatar" />
+              <h5 class="card-text ml-2 text-left">Phillip Massey</h5>
+            </div>
+            <!-- Rating and Time -->
+            <div class="card-item d-flex bg-transparent justify-content-between my-3">
+              <img class="mt-1" src="images/rating.png" alt="Rating" />
+              <p class="card-text">8 min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-12 col-sm-4 col-md-3 col-lg-3 p-4">
+
+        <div class="card " style="max-width: 18rem">
+          <div class="card-header bg-transparent">
+            <img src="images/thumbnail_2.jpg" class="card-img-top" alt="Video Thumbnail" />
+
+            <img class="play-icon-img1 position-absolute" src="images/play.png" alt="Play Icon" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-left font-weight-bold">
+              Sad Smile
+            </h5>
+            <p class="card-text text-left text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
+            </p>
+          </div>
+          <div class="card-footer purp-span-text bg-transparent pt-4">
+            <div class="d-flex align-items-center justify-content-left">
+              <img class="person-img img-fluid rounded-circle" src="images/profile_5.jpg" alt="Person's Avatar" />
+              <h5 class="card-text ml-2 text-left">Phillip Massey</h5>
+            </div>
+            <!-- Rating and Time -->
+            <div class="card-item d-flex bg-transparent justify-content-between my-3">
+              <img class="mt-1" src="images/rating.png" alt="Rating" />
+              <p class="card-text">8 min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-12 col-sm-4 col-md-3 col-lg-3 p-4">
+
+        <div class="card " style="max-width: 18rem">
+          <div class="card-header bg-transparent">
+            <img src="images/thumbnail_2.jpg" class="card-img-top" alt="Video Thumbnail" />
+
+            <img class="play-icon-img1 position-absolute" src="images/play.png" alt="Play Icon" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-left font-weight-bold">
+              Sad Smile
+            </h5>
+            <p class="card-text text-left text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
+            </p>
+          </div>
+          <div class="card-footer purp-span-text bg-transparent pt-4">
+            <div class="d-flex align-items-center justify-content-left">
+              <img class="person-img img-fluid rounded-circle" src="images/profile_5.jpg" alt="Person's Avatar" />
+              <h5 class="card-text ml-2 text-left">Phillip Massey</h5>
+            </div>
+            <!-- Rating and Time -->
+            <div class="card-item d-flex bg-transparent justify-content-between my-3">
+              <img class="mt-1" src="images/rating.png" alt="Rating" />
+              <p class="card-text">8 min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-12 col-sm-4 col-md-3 col-lg-3 p-4">
+
+        <div class="card " style="max-width: 18rem">
+          <div class="card-header bg-transparent">
+            <img src="images/thumbnail_2.jpg" class="card-img-top" alt="Video Thumbnail" />
+
+            <img class="play-icon-img1 position-absolute" src="images/play.png" alt="Play Icon" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-left font-weight-bold">
+              Sad Smile
+            </h5>
+            <p class="card-text text-left text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
+            </p>
+          </div>
+          <div class="card-footer purp-span-text bg-transparent pt-4">
+            <div class="d-flex align-items-center justify-content-left">
+              <img class="person-img img-fluid rounded-circle" src="images/profile_5.jpg" alt="Person's Avatar" />
+              <h5 class="card-text ml-2 text-left">Phillip Massey</h5>
+            </div>
+            <!-- Rating and Time -->
+            <div class="card-item d-flex bg-transparent justify-content-between my-3">
+              <img class="mt-1" src="images/rating.png" alt="Rating" />
+              <p class="card-text">8 min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="col-12 col-sm-4 col-md-3 col-lg-3 p-4">
+
+        <div class="card " style="max-width: 18rem">
+          <div class="card-header bg-transparent">
+            <img src="images/thumbnail_2.jpg" class="card-img-top" alt="Video Thumbnail" />
+
+            <img class="play-icon-img1 position-absolute" src="images/play.png" alt="Play Icon" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-left font-weight-bold">
+              Sad Smile
+            </h5>
+            <p class="card-text text-left text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
+            </p>
+          </div>
+          <div class="card-footer purp-span-text bg-transparent pt-4">
+            <div class="d-flex align-items-center justify-content-left">
+              <img class="person-img img-fluid rounded-circle" src="images/profile_5.jpg" alt="Person's Avatar" />
+              <h5 class="card-text ml-2 text-left">Phillip Massey</h5>
+            </div>
+            <!-- Rating and Time -->
+            <div class="card-item d-flex bg-transparent justify-content-between my-3">
+              <img class="mt-1" src="images/rating.png" alt="Rating" />
+              <p class="card-text">8 min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="col-12 col-sm-4 col-md-3 col-lg-3 p-4">
+
+        <div class="card " style="max-width: 18rem">
+          <div class="card-header bg-transparent">
+            <img src="images/thumbnail_2.jpg" class="card-img-top" alt="Video Thumbnail" />
+
+            <img class="play-icon-img1 position-absolute" src="images/play.png" alt="Play Icon" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-left font-weight-bold">
+              Sad Smile
+            </h5>
+            <p class="card-text text-left text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
+            </p>
+          </div>
+          <div class="card-footer purp-span-text bg-transparent pt-4">
+            <div class="d-flex align-items-center justify-content-left">
+              <img class="person-img img-fluid rounded-circle" src="images/profile_5.jpg" alt="Person's Avatar" />
+              <h5 class="card-text ml-2 text-left">Phillip Massey</h5>
+            </div>
+            <!-- Rating and Time -->
+            <div class="card-item d-flex bg-transparent justify-content-between my-3">
+              <img class="mt-1" src="images/rating.png" alt="Rating" />
+              <p class="card-text">8 min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="col-12 col-sm-4 col-md-3 col-lg-3 p-4">
+
+        <div class="card " style="max-width: 18rem">
+          <div class="card-header bg-transparent">
+            <img src="images/thumbnail_2.jpg" class="card-img-top" alt="Video Thumbnail" />
+
+            <img class="play-icon-img1 position-absolute" src="images/play.png" alt="Play Icon" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-left font-weight-bold">
+              Sad Smile
+            </h5>
+            <p class="card-text text-left text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
+            </p>
+          </div>
+          <div class="card-footer purp-span-text bg-transparent pt-4">
+            <div class="d-flex align-items-center justify-content-left">
+              <img class="person-img img-fluid rounded-circle" src="images/profile_5.jpg" alt="Person's Avatar" />
+              <h5 class="card-text ml-2 text-left">Phillip Massey</h5>
+            </div>
+            <!-- Rating and Time -->
+            <div class="card-item d-flex bg-transparent justify-content-between my-3">
+              <img class="mt-1" src="images/rating.png" alt="Rating" />
+              <p class="card-text">8 min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 8 -->
+      <div class="col-12 col-sm-4 col-md-3 col-lg-3 p-4">
+
+        <div class="card " style="max-width: 18rem">
+          <div class="card-header bg-transparent">
+            <img src="images/thumbnail_2.jpg" class="card-img-top" alt="Video Thumbnail" />
+
+            <img class="play-icon-img1 position-absolute" src="images/play.png" alt="Play Icon" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-left font-weight-bold">
+              Sad Smile
+            </h5>
+            <p class="card-text text-left text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
+            </p>
+          </div>
+          <div class="card-footer purp-span-text bg-transparent pt-4">
+            <div class="d-flex align-items-center justify-content-left">
+              <img class="person-img img-fluid rounded-circle" src="images/profile_5.jpg" alt="Person's Avatar" />
+              <h5 class="card-text ml-2 text-left">Phillip Massey</h5>
+            </div>
+            <!-- Rating and Time -->
+            <div class="card-item d-flex bg-transparent justify-content-between my-3">
+              <img class="mt-1" src="images/rating.png" alt="Rating" />
+              <p class="card-text">8 min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 9 -->
+      <div class="col-12 col-sm-4 col-md-3 col-lg-3 p-4">
+
+        <div class="card " style="max-width: 18rem">
+          <div class="card-header bg-transparent">
+            <img src="images/thumbnail_2.jpg" class="card-img-top" alt="Video Thumbnail" />
+
+            <img class="play-icon-img1 position-absolute" src="images/play.png" alt="Play Icon" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-left font-weight-bold">
+              Sad Smile
+            </h5>
+            <p class="card-text text-left text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
+            </p>
+          </div>
+          <div class="card-footer purp-span-text bg-transparent pt-4">
+            <div class="d-flex align-items-center justify-content-left">
+              <img class="person-img img-fluid rounded-circle" src="images/profile_5.jpg" alt="Person's Avatar" />
+              <h5 class="card-text ml-2 text-left">Phillip Massey</h5>
+            </div>
+            <!-- Rating and Time -->
+            <div class="card-item d-flex bg-transparent justify-content-between my-3">
+              <img class="mt-1" src="images/rating.png" alt="Rating" />
+              <p class="card-text">8 min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 10 -->
+      <div class="col-12 col-sm-4 col-md-3 col-lg-3 p-4">
+
+        <div class="card " style="max-width: 18rem">
+          <div class="card-header bg-transparent">
+            <img src="images/thumbnail_2.jpg" class="card-img-top" alt="Video Thumbnail" />
+
+            <img class="play-icon-img1 position-absolute" src="images/play.png" alt="Play Icon" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-left font-weight-bold">
+              Sad Smile
+            </h5>
+            <p class="card-text text-left text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
+            </p>
+          </div>
+          <div class="card-footer purp-span-text bg-transparent pt-4">
+            <div class="d-flex align-items-center justify-content-left">
+              <img class="person-img img-fluid rounded-circle" src="images/profile_5.jpg" alt="Person's Avatar" />
+              <h5 class="card-text ml-2 text-left">Phillip Massey</h5>
+            </div>
+            <!-- Rating and Time -->
+            <div class="card-item d-flex bg-transparent justify-content-between my-3">
+              <img class="mt-1" src="images/rating.png" alt="Rating" />
+              <p class="card-text">8 min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 11 -->
+      <div class="col-12 col-sm-4 col-md-3 col-lg-3 p-4 ">
+
+        <div class="card " style="max-width: 18rem">
+          <div class="card-header bg-transparent">
+            <img src="images/thumbnail_2.jpg" class="card-img-top" alt="Video Thumbnail" />
+
+            <img class="play-icon-img1 position-absolute" src="images/play.png" alt="Play Icon" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-left font-weight-bold">
+              Sad Smile
+            </h5>
+            <p class="card-text text-left text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
+            </p>
+          </div>
+          <div class="card-footer purp-span-text bg-transparent pt-4">
+            <div class="d-flex align-items-center justify-content-left">
+              <img class="person-img img-fluid rounded-circle" src="images/profile_5.jpg" alt="Person's Avatar" />
+              <h5 class="card-text ml-2 text-left">Phillip Massey</h5>
+            </div>
+            <!-- Rating and Time -->
+            <div class="card-item d-flex bg-transparent justify-content-between my-3">
+              <img class="mt-1" src="images/rating.png" alt="Rating" />
+              <p class="card-text">8 min</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer-section">
+
+    <div
+      class="d-flex justify-content-md-around justify-content-center align-items-center flex-sm-row flex-column py-sm-5 pt-5 mt-5 text-white">
+      <div class=" pr-2 float-left my-5 justify-content-between">
+        <a href="" class="col-12 col-sm-1 pr-1">
+          <img src="images/smile_off.png" width="30" height="30">
+        </a>
+        <a href="" class="col-12 col-sm-1  pr-5">
+          <img src="images/logo.png" width="120" height="30">
+        </a>
+      </div>
+      <div class="  mt-sm-0 pr-sm-3 pr-md-0 float-right justify-content-end">
+        <a src="images/facebook.svg" href="https://www.facebook.com/HolbertonSchoolTulsa/"><i
+            class="facebook-icon icon-img mx-3"></i></a>
+        <a href="https://twitter.com/holbertonschool"><i class="twitter-icon icon-img mx-auto "></i></a>
+        <a href="https://www.instagram.com/holbertonschool"><i class="instagram-icon icon-img mx-3"></i></a>
+      </div>
+    </div>
+    <div class=" d-flex justify-content-center pt-3 pt-sm-0 ">
+      <p class="copyright font-weight-light text-secondary mt-5 pt-5">©smileschool 2023</p>
+    </div>
+  </footer>
 </body>
+
 </html>
