@@ -160,19 +160,35 @@ font-size: 180px;
 .carousel-video-prev-icon {
     background-image: url(images/arrow_black_left.png);
     width: 40px;
-    height: 60px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .carousel-video-next-icon {
     background-image: url(images/arrow_black_right.png);
     width: 40px;
-    height: 60px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
 .play-icon-img {
     left: 50%;
-    top: 25%;
+    top: 18%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    max-width: 30%;
+    opacity: 0.7;
+    /* Adjust the size of the centered image */ 
+}
+
+.play-icon-img1 {
+    left: 50%;
+    top: 15%;
     position: absolute;
     transform: translate(-50%, -50%);
     max-width: 30%;
@@ -193,6 +209,31 @@ font-size: 180px;
     border-style: none;
 }
 
+
+.footer-section {
+    height:auto;
+    background-color: var(--colorprimary);
+}
+
+.icon-img {
+    font-family: "holberton_school-icon";
+    font-size:32px;
+    color: var(--colorwhite);
+}
+
+.facebook-icon::before {
+    content: '\e908';
+    font-size:32px;
+}
+
+.twitter-icon::before {
+    content: '\e90f';
+}
+
+.instagram-icon::before {
+    content: '\e90a';
+    font-size:32px;
+}
 
 /* DESKTOP DESIGN */
 @media screen and (max-width: 1440px) {
@@ -218,12 +259,32 @@ font-size: 180px;
     .header-title {
         font-size: 100px;
     }
+
+    .play-icon-img1 {
+        left: 50%;
+        top: 15%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        max-width: 30%;
+        opacity: 0.7;
+        /* Adjust the size of the centered image */ 
+    }
 }
 
 /* Media Queries for mobile first and Responsive designs */
 @media screen and (max-width: 980px) {
     .header-title {
         font-size: 100px !important;
+    }
+
+    .play-icon-img1 {
+        left: 50%;
+        top: 20%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        max-width: 30%;
+        opacity: 0.7;
+        /* Adjust the size of the centered image */ 
     }
 }
 
@@ -255,6 +316,16 @@ font-size: 180px;
     .play-icon-img {
         left: 50%;
         top: 25%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        max-width: 30%;
+        opacity: 0.7;
+        /* Adjust the size of the centered image */ 
+    }
+
+    .play-icon-img1 {
+        left: 50%;
+        top: 20%;
         position: absolute;
         transform: translate(-50%, -50%);
         max-width: 30%;
@@ -296,6 +367,16 @@ font-size: 180px;
         background-repeat: no-repeat;
     }
 
+    .play-icon-img1 {
+        left: 50%;
+        top: 20%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        max-width: 30%;
+        opacity: 0.7;
+        /* Adjust the size of the centered image */ 
+    }
+    
 }
 
 

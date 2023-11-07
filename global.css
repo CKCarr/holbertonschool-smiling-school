@@ -54,6 +54,14 @@
     font-family: var(--font-family-base);
   }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
   /* Learning how to hide scroll bars and web-kits*/
 
 /* Hide scroll-bars but allow scrolling */
