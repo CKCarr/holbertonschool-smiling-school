@@ -1,5 +1,13 @@
-.header {
+/* HEADER SECTION */
+.header-homepage {
     background: url('images/pic_1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-pricing {
+    background: url('images/pic_2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,7 +89,7 @@ font-size: 180px;
     box-shadow:  0.65rem 0.5rem 0.5rem 0.1rem rgba(0, 0, 0, 0.25) !important;
 }
 
-/* PROS IMAGE SETTINGS*/
+/* HOMEPAGE__-> PROS IMAGE SETTINGS*/
 .pros img {
     width: 200px;
     height: 180px;
@@ -98,7 +106,7 @@ font-size: 180px;
     font-weight: var(--font-weight-bold);
 }
 
-/* HOMEPAGE QUOTE CAROUSEL*/
+/* QUOTE CAROUSEL*/
 
 #quote-carousel {
     background-color: var(--colorpurple);
@@ -143,7 +151,7 @@ font-size: 180px;
     margin-left: 10px;
 }
 
-/* VIDEO Carousel*/
+/* HOMEPAGE VIDEO Carousel*/
 .person-img {
     width: 60px;
     background-size: cover;
@@ -185,7 +193,7 @@ font-size: 180px;
     opacity: 0.7;
     /* Adjust the size of the centered image */ 
 }
-
+/* special for LATEST VIDEO SECTION */
 .play-icon-img1 {
     left: 50%;
     top: 15%;
@@ -209,21 +217,26 @@ font-size: 180px;
     border-style: none;
 }
 
+.faqs-section {
+    background-color: var(--colorwhite);
+    color : var(--colorprimary);
+}
 
+/* FOOTER */
 .footer-section {
     height:auto;
     background-color: var(--colorprimary);
 }
 
 .icon-img {
+    justify-content: space-evenly;
     font-family: "holberton_school-icon";
-    font-size:32px;
+    font-size: 32px;
     color: var(--colorwhite);
 }
 
 .facebook-icon::before {
     content: '\e908';
-    font-size:32px;
 }
 
 .twitter-icon::before {
@@ -232,7 +245,6 @@ font-size: 180px;
 
 .instagram-icon::before {
     content: '\e90a';
-    font-size:32px;
 }
 
 /* DESKTOP DESIGN */
@@ -376,7 +388,7 @@ font-size: 180px;
         opacity: 0.7;
         /* Adjust the size of the centered image */ 
     }
-    
+
 }
 
 
