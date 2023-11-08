@@ -57,7 +57,7 @@
 
   <body>
     <!-- HEADER -->
-    <div class="header-pricing">
+    <div class="header-pricing ">
       <header
         class="container d-flex justify-content-between pt-4 flex-sm-row flex-column"
       >
@@ -93,19 +93,19 @@
 
         <div class="header-nav">
           <nav
-            class="text-white col-xl-3 col-sm-6 col-12 col-md-5 d-sm-flex collapse px-0"
+            class="text-white col-xl-3 col-sm-6 col-12 col-md-5 d-sm-flex collapse px-0 pb-3"
             id="hamburger-collapse"
           >
             <ul
               class="d-flex justify-content-sm-between align-items-center px-0 w-100"
             >
-              <li class="nav-item">
+              <li class="nav-item pt-4">
                 <a class="nav-link"><b>COURSES</b></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item pt-4">
                 <a class="nav-link"><b>PRICING</b></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item pt-4">
                 <a class="nav-link"><b>LOGIN</b></a>
               </li>
             </ul>
@@ -115,78 +115,113 @@
 
       <!-- HERO -->
       <div class="header-content text-center">
-        <h1
-          class="header-title text-white font-weight-bold pb-0 pt-5 mb-0 mt-5"
-        >
-          Get schooled
+
+        <!-- First HEADER-->
+        <div class="text-center pt-5 mt-5 align-items-center">
+          <h1
+          class=" text-white font-weight-bold mt-5 justify-content-center align-items-center">
+        <span class="pb-2">What is</span>
+        <span class="header-icon1 d-inline-block mt-4 pt-2"></span>
+        <span class="header-logo1 d-inline-block mt-4 pt-2"></span>
+        <span class="pb-5">?</span>
         </h1>
-        <div class="d-flex justify-content-center">
-          <p class="text-white font-weight-bold m-5"><b>SMILES</b></p>
-          <p class="text-white font-weight-bold m-5"><b>GRIN</b></p>
-          <p class="text-white font-weight-bold m-5"><b>LAUGH</b></p>
         </div>
 
-        <button
-          class="btn btn-primary border-0 rounded-pill font-weight-light my-3 shadow-lg py-3"
-        >
-          <p>REGISTER FOR FREE</p>
-        </button>
-        <h2 class="text-white font-weight-light mt-5">
-          <span class="purp-span-text font-weight-bold">Learn</span> from the
-          pros
+        <!-- 2nd header -->
+        <h2 class="header-title-pricing text-white display-3 font-weight-light my-5">
+          <span class=" font-weight-bold">Go pro!
         </h2>
 
-        <!-- PROFILES -->
-        <section class="pros d-flex text-white justify-content-center p-5 row">
-          <div class="col-6 col-md-3 col-xs-6 profile align-content-center">
-            <img
-              src="images/profile_1.jpg"
-              class="img-fluid rounded-circle mb-3"
-              alt="Phillip"
-            />
-            <h5 class="font-weight-bold">Phillip Massey</h5>
-            <p class="font-italic font-weight-normal mb-1">
-              « Smile of the year » 2018 - 2019
-            </p>
-          </div>
+        <!-- BUTTONS -->
 
-          <div class="col-6 col-md-3 col-xs-6 profile">
-            <img
-              src="images/profile_2.jpg"
-              class="img-fluid rounded-circle mb-3"
-              alt="Nannie"
-            />
-            <h5 class="font-weight-bold">Nannie Lawrence</h5>
-            <p class="font-italic font-weight-normal mb-1">
-              Best « little smile » 2017
-            </p>
-          </div>
 
-          <div class="col-6 col-md-3 col-xs-6 profile">
-            <img
-              src="images/profile_3.jpg"
-              class="img-fluid rounded-circle mb-3"
-              alt="Bruce"
-            />
-            <h5 class="font-weight-bold">Bruce Walters</h5>
+        <!-- PRICE TABLE-->
+        <section class="price-table d-flex justify-content-center  px-5 ">
 
-            <p class="font-italic font-weight-normal mb-1 text-center">
-              Best « Friend Smile » live performance 2019
-            </p>
-          </div>
+          <table class="table table-borderless w-50  mx-auto px-4 text-white">
+            <caption class="ml-3 pt-4 text-white text-center">
+              <span class="d-flex ">Exclusive discount on all Signal products</span></caption>
 
-          <div class="col-6 col-md-3 col-xs-6 profile">
-            <img
-              src="images/profile_4.jpg"
-              class="img-fluid rounded-circle mb-3"
-              alt="Henry"
-            />
-            <h5 class="font-weight-bold">Henry Hughes</h5>
-            <p class="font-italic font-weight-normal mb-1">
-              « 24h smiles » winner 2016 - 2019
-            </p>
-          </div>
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col ">
+                  <button class="btn btn-primary border-0 rounded-pill font-weight-light my-3 shadow-lg py-3 mr-5 ">
+                  <p>BUY 3 MONTHS</p>
+                  </button>
+                </th>
+                
+                <th scope="col ">
+                  <button class="btn btn-primary border-0 rounded-pill font-weight-light my-3 shadow-lg py-3 ">
+                  <p>BUY 1 YEAR</p>
+                  </button>
+                </th>
+              </tr>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col ">
+                  <h2>$3.60</h2>
+                  <p class="text-muted ">$1.20/month</p>
+                  </button>
+                </th>
+                
+                <th scope="col ">
+                  
+                  <h2>$12.99</h2>
+                  <p class="text-muted">$1.08/month</p>
+                  </button>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row text-center">Unlimited access to all tutorials</th>
+                <td></td>
+                <td class="green-check"></td>
+                <td class="green-check"></td>
+              </tr>
+              <tr>
+                <th scope="row">Access SmileSchool private forum</th>
+                <td></td>
+                <td class="green-check"></td>
+                <td class="green-check"></td>
+              </tr>
+              <tr>
+                <th scope="row">Access Smiles contests & Smiles Analysis</th>
+                <td></td>
+                <td class="green-check"></td>
+                <td class="green-check"></td>
+              </tr>
+              <tr>
+                <th scope="row">Get a free  toothbrush</th>
+                <td></td>
+                <td class=""></td>
+                <td class="green-check"></td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <img src="images/signal.png" width="80" height="30">
+                </th>
+                <td></td>
+                <td class=""></td>
+                <td class="green-check"></td>
+              </tr>
+
+            </tbody>
+          </table>
+
         </section>
+
+<!--TEST-->
+
+
+
+
+
+
+<!--TEST-->
       </div>
     </div>
 
