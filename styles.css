@@ -240,10 +240,15 @@ th {
     background-position: center;
 }
 
+.card-header-container {
+    position: relative;
+}
+
+
 
 .play-icon-img {
     left: 50%;
-    top: 18%;
+    top: 15%;
     position: absolute;
     transform: translate(-50%, -50%);
     max-width: 30%;
@@ -251,14 +256,14 @@ th {
     /* Adjust the size of the centered image */ 
 }
 /* special for LATEST VIDEO SECTION */
-.play-icon-img1 {
+.play-icon-img2 {
     left: 50%;
     top: 15%;
-    position: absolute;
+    position: absolute center;
     transform: translate(-50%, -50%);
     max-width: 30%;
     opacity: 0.7;
-    background-position: center;
+
     /* Adjust the size of the centered image */ 
 }
 
@@ -330,9 +335,9 @@ th {
         font-size: 100px;
     }
 
-    .play-icon-img1 {
+    .play-icon-img2 {
         left: 50%;
-        top: 15%;
+        top: 50%;
         position: absolute;
         transform: translate(-50%, -50%);
         max-width: 30%;
@@ -347,9 +352,9 @@ th {
         font-size: 100px !important;
     }
 
-    .play-icon-img1 {
+    .play-icon-img2 {
         left: 50%;
-        top: 20%;
+        top: 50%;
         position: absolute;
         transform: translate(-50%, -50%);
         max-width: 30%;
@@ -386,17 +391,18 @@ th {
     .play-icon-img {
         left: 50%;
         top: 25%;
-        position: absolute;
+        position: absolute center;
         transform: translate(-50%, -50%);
         max-width: 30%;
         opacity: 0.7;
         /* Adjust the size of the centered image */ 
     }
 
-    .play-icon-img1 {
+    .play-icon-img2 {
+        background-position: ;
         left: 50%;
-        top: 20%;
-        position: absolute;
+        top: 50%;
+        position: relative;
         transform: translate(-50%, -50%);
         max-width: 30%;
         opacity: 0.7;
@@ -437,9 +443,9 @@ th {
         background-repeat: no-repeat;
     }
 
-    .play-icon-img1 {
+    .play-icon-img2 {
         left: 50%;
-        top: 20%;
+        top: 50%;
         position: absolute;
         transform: translate(-50%, -50%);
         max-width: 30%;
